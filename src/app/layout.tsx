@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import { Poppins } from 'next/font/google';
 import './globals.css';
+import { AuthProvider } from '@/components/auth/AuthProvider';
 
 // Load Poppins font with multiple weights for better typography
 const poppins = Poppins({
@@ -23,9 +24,11 @@ export default function RootLayout({
   return (
     <html lang="ko" className="h-full scroll-smooth">
       <body className={`${poppins.variable} font-sans antialiased h-full`}>
-        <div className="min-h-screen flex flex-col bg-gradient-to-b from-gray-50 to-gray-100">
-          {children}
-        </div>
+        <AuthProvider>
+          <div className="min-h-screen flex flex-col bg-gradient-to-b from-gray-50 to-gray-100">
+            {children}
+          </div>
+        </AuthProvider>
       </body>
     </html>
   );

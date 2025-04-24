@@ -39,7 +39,13 @@ export default function LoginForm() {
   // 데모 접근 처리
   const handleDemoAccess = (e: React.MouseEvent) => {
     e.preventDefault()
+    
+    // Store in both localStorage and cookies for client/server compatibility
     localStorage.setItem('demo_access', 'true')
+    
+    // Set cookie for middleware (expires in 1 day)
+    document.cookie = `demo_access=true; path=/; max-age=${60 * 60 * 24}; SameSite=Lax;`
+    
     router.push('/dashboard')
   }
 
