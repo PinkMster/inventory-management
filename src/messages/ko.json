@@ -1,0 +1,41 @@
+{
+  "Index": {
+    "title": "재고 관리 시스템",
+    "description": "재고 관리 시스템에 오신 것을 환영합니다"
+  },
+  "Navigation": {
+    "dashboard": "대시보드",
+    "inventory": "재고",
+    "warehouses": "창고",
+    "analytics": "분석"
+  },
+  "Common": {
+    "loading": "로딩 중...",
+    "error": "오류가 발생했습니다",
+    "save": "저장",
+    "cancel": "취소",
+    "delete": "삭제",
+    "edit": "수정",
+    "create": "생성",
+    "search": "검색"
+  },
+  "Dashboard": {
+    "welcome": "환영합니다",
+    "summary": "요약",
+    "recentActivity": "최근 활동"
+  },
+  "Inventory": {
+    "items": "물품",
+    "categories": "카테고리",
+    "movements": "재고 이동",
+    "lowStock": "부족 재고",
+    "outOfStock": "품절"
+  },
+  "Warehouse": {
+    "details": "창고 정보",
+    "sections": "구역",
+    "capacity": "수용량",
+    "utilization": "사용률",
+    "location": "위치"
+  }
+} 
